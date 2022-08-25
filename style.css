@@ -1,0 +1,53 @@
+
+
+
+
+.main_panel{
+
+    display: flex;
+    height: auto;
+    width: auto;
+    margin: 0px;
+    padding: 0px;
+}
+
+
+
+
+.l_side_panel{
+    display: flex;
+    background-image: url("chad-kirchoff-mJYCFouNG94-unsplash.jpg");
+    height: 900px;
+    width: 350px;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    flex-wrap: wrap;
+    align-items: center;
+}
+.separator{
+    opacity: 0%;
+    height: 200px;
+    width: 100%;
+}
+
+.main_Title{
+    
+    width: 100%;
+    height: auto;
+    background-color: rgba(0, 0, 0, 0.377);
+    
+
+}
+
+.main_Title > h1{
+    
+    color: black;
+}
+
+.r_side_panel{
+
+    background-color: red;
+
+}
+
