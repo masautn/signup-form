@@ -1,12 +1,24 @@
 
+:root {
+    --left-space: 48px;
+  }
 
+  @font-face {
+    font-family: "Norse Bold";
+    src: url("./Norse-Bold.otf");
+  }
 
+  html, body {
+    margin:0px;
+    height:100%;
+    font-family: sans-serif;
+  }
 
 .main_panel{
 
     display: flex;
-    height: auto;
-    width: auto;
+    height: 100%;
+    width: 100%;
     margin: 0px;
     padding: 0px;
 }
@@ -17,17 +29,20 @@
 .l_side_panel{
     display: flex;
     background-image: url("chad-kirchoff-mJYCFouNG94-unsplash.jpg");
-    height: 900px;
-    width: 350px;
+    background-position: center center;
+    font-family: "Norse Bold";
+    height: 100%;
+    width: 30%;
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
     flex-wrap: wrap;
     align-items: center;
+    background-color: rgba(0, 0, 0, 0.4);
 }
 .separator{
     opacity: 0%;
-    height: 200px;
+    height: 30%;
     width: 100%;
 }
 
@@ -42,12 +57,75 @@
 
 .main_Title > h1{
     
-    color: black;
+    
+    color:  #E5E7EB;
+    text-align: center;
+    font-size: 3rem;
 }
 
 .r_side_panel{
 
-    background-color: red;
+    background-color: #E5E7EB;
+    width: 70%;
+    height: 100%;
+
+}
+.r_side_panel_p{
+
+    
+    color: black;
+    text-align: center;
+    font-size: 1.5rem;
+    font-weight: bold;
+    padding: 150px 50px 50px 50px;
+    
 
 }
 
+.input_section{
+
+    
+    background-color: white;
+    color: black;
+    margin-top: 32px;
+    padding-top: 16px;
+    padding-bottom: 32px;
+    padding-left: var(--left-space);
+    font-weight: bold;
+    margin-bottom: 8px;
+    box-shadow: 0 5px 5px 4px rgba(0, 0, 0, 0.1);
+
+}
+.inputs{
+    display:flex;
+    justify-content: space-around;
+    align-items: center;
+
+}
+
+.send_Btn{
+    border: none;
+    background-color: #00000079;
+    border-radius: 8px;
+    box-shadow: 2px 5px 5px 4px rgba(0, 0, 0, 0.1);
+    cursor: pointer;
+    color: white;
+    font-weight: 300;
+    font-size: 1.1rem;
+    font-weight: bold;
+    padding: 10px 30px 10px 30px;
+}
+
+
+.btn_section{
+    margin-top: 32px;
+    display: flex;
+    flex-wrap: wrap;
+    
+    flex-direction: column;
+}
+.btn_section > div{
+    padding: 10px;
+    display: flex;
+    justify-content: center;
+}
